@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Meses Contigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="universe">
+        <div id="central-star">
+            <p>5 Meses<br>Contigo</p>
+        </div>
+
+        <div id="p1" class="planet planet-1" onclick="openModal('planet-1')">Paz</div>
+        
+        <div id="p2" class="planet planet-2 locked" onclick="openModal('planet-2')">Fuerza</div>
+        
+        <div id="p3" class="planet planet-3 locked" onclick="openModal('planet-3')">Colores</div>
+        
+        <div id="p4" class="planet planet-4 locked" onclick="openModal('planet-4')">Futuro</div>
+        
+        <div id="p5" class="planet planet-5 locked" onclick="openModal('planet-5')">Galaxia</div>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div id="modal-content">
+            <button onclick="closeModal()" class="close-btn">X</button>
+            
+            <h2 id="modal-title">Título</h2>
+            
+            <div class="modal-body-scroll">
+                <p id="modal-text">Texto del recuerdo...</p>
+                <img id="modal-image" src="" alt="Recuerdo" class="hidden">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
